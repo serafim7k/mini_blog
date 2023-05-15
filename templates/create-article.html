@@ -5,14 +5,14 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Add Article</h1>
-<form action="/create-article" autocomplete="off" method="post">
-    <h3>Input Username</h3>
-    <input type="text" name="username" placeholder="Username">
-    <h3>Input Title</h3>
-    <input type="text" name="title" placeholder="Title">
-    <h3>Input Text</h3>
-    <textarea name="text" placeholder="Text"></textarea><br>
-    <input type="submit" value="SEND">
-</form>
+    <h1 class="form__title"><span>Add</span> Article</h1>
+    <form class="authorization__form" action="/create-article" autocomplete="off" method="post">
+        <h3 class="authorization__form-input__requirment"><span>Input</span> Username</h3>
+        <input class="authorization__form-input" type="text" name="username" placeholder="Username">
+        <h3 class="authorization__form-input__requirment"><span>Input</span> Title</h3>
+        <input class="authorization__form-input" type="text" name="title" placeholder="Title">
+        <h3 class="authorization__form-input__requirment"><span>Input</span> Text</h3>
+        <textarea class="authorization__form-input" name="text" placeholder="Text"></textarea><br>
+        <input class="authorization__form-input__botton" type="submit" value="SEND">
+    </form>
 {% endblock %}

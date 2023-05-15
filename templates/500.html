@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <div class="error__block">
+        <h1>error 500</h1>
+        <h2>Internal Server Error</h2>
+        <p class="error__reason"><strong>The server is not working correctly</strong></p>
+        <p class="another__reason">or</p>
+        <p class="error__reason"><strong>Your username already exists</strong></p>
+        <a class="back__home" href="/">Back to home page</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block body %}
+    <h1>ALL POSTS</h1>
+    <div class="posts">
+        {% for el in articles%}
+            <ul class="posts-list">
+                <li>Article: {{el.id}}</li>
+                <li>{{el}}</li>
+                <li>{{el.date.date()}}</li>
+                <a class="button" href="/posts/{{ el.id }}">Detail</a>
+            </ul>
+        {% endfor%}
+    </div>
+{% endblock %}

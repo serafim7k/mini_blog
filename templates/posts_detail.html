@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Detaile
+{% endblock %}
+
+{% block body %}
+
+<div class="posts">
+    <h1>POST DETAIL - {{ article.title }}</h1>
+
+       <ul class="posts-list">
+            <li>{{article.text}}</li>
+            <li>{{article.date.date()}}</li>
+            <a class="button" href="/posts">Go Back</a>
+            <a class="button" href="/posts/{{article.id}}/delete">Delete</a>
+            <a class="button" href="/posts/{{article.id}}/update">Edit</a>
+       </ul>
+</div>
+{% endblock %}

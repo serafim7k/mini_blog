@@ -21,19 +21,19 @@
                 <nav class="menu">
                     <ul class="list">
                         <li class="list-item">
-                            <a class="list-link" href="/home">Index</a>
+                            <a class="list-link" href="/">Home</a>
                         </li>
                         <li class="list-item">
                             <a class="list-link" href="/about">About</a>
                         </li>
                         <li class="list-item">
-                            <a class="list-link" href="/create-article">Create-article</a>
+                            <a class="list-link" href="/create-article"><span>Create-article</span></a>
                         </li>
                         <li class="list-item">
-                            <a class="list-link" href="#">Page_4</a>
+                            <a class="list-link" href="/posts"><span>Posts</span></a>
                         </li>
                         <li class="list-item">
-                            <a class="list-link" href="#">Page_5</a>
+                            <a class="list-link" href="/login"><span>Login</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -52,6 +52,10 @@
             <h3 class="footer">FOOTER</h3>
         </div>
     </footer>
+
+
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </div>
 </body>
 </html>

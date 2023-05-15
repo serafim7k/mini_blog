@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Login page
+{% endblock %}
+
+{% block body %}
+    <h1 class="form__title"><span>Log</span>In</h1>
+    <form class="authorization__form" action="/" autocomplete="off" method="post">
+        <h3 class="authorization__form-input__requirment"><span>Input</span> Name</h3>
+        <input class="authorization__form-input" type="text" name="name" placeholder="Name">
+        <h3 class="authorization__form-input__requirment"><span>Input</span> Email</h3>
+        <input class="authorization__form-input" type="email" name="email" placeholder="Email">
+        <h3 class="authorization__form-input__requirment"><span>Input</span> Password</h3>
+        <input class="authorization__form-input" type="password" name="password" placeholder="Password"><br>
+        <input class="authorization__form-input__botton" type="submit" value="SEND">
+    </form>
+{% endblock %}

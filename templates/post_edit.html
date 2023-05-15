@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Update Article
+{% endblock %}
+
+{% block body %}
+
+<form class="authorization__form" autocomplete="off" method="post">
+    <h3 class="authorization__form-input__requirment"><span>Input</span> Username</h3>
+    <input class="authorization__form-input" type="text" name="username" placeholder="Username" value="{{article.username}}">
+    <h3 class="authorization__form-input__requirment"><span>Input</span> Title</h3>
+    <input class="authorization__form-input" type="text" name="title" placeholder="Title" value="{{article.title}}">
+    <h3 class="authorization__form-input__requirment"><span>Input</span> Text</h3>
+    <textarea class="authorization__form-input" name="text" placeholder="Text" >{{article.text}}</textarea><br>
+    <input class="authorization__form-input__botton" type="submit" value="SEND">
+</form>
+
+{% endblock %}
