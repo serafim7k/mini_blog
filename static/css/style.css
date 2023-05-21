@@ -262,6 +262,10 @@ li{
     margin-bottom: 10px;
 }
 
+.posts-list hr{
+    border: 1px solid #934cba;
+}
+
 .button{
     padding: 10px;
     color: #ff0048;

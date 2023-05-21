@@ -9,8 +9,10 @@
     <div class="posts">
         {% for el in articles%}
             <ul class="posts-list">
-                <li>Article: {{el.id}}</li>
+                <li>{{el.username}}</li>
+                <hr>
                 <li>{{el}}</li>
+                <hr>
                 <li>{{el.date.date()}}</li>
                 <a class="button" href="/posts/{{ el.id }}">Detail</a>
             </ul>
